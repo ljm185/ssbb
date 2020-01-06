@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <i><%= @series.name %></i>
+</p>
+
+<p>
+  <strong>Genre:</strong>
+  <%= @series.genre %>
+</p>
+
+<p>
+  <strong>Year of debut:</strong>
+  <%= @series.year_of_debut %>
+</p>
+
+<%= link_to 'Edit', edit_series_path(@series) %> |
+<%= link_to 'Back', series_index_path %>

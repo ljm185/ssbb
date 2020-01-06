@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fighter.name %>
+</p>
+
+<p>
+  <strong>Catchphrase:</strong>
+  <%= @fighter.catchphrase %>
+</p>
+
+<p>
+  <strong>Clone?:</strong>
+  <%= @fighter.clone %>
+</p>
+
+<p>
+  <strong>Series:</strong>
+  <i><%= @fighter.series.name %></i>
+</p>
+
+<%= link_to 'Edit', edit_fighter_path(@fighter) %> |
+<%= link_to 'Back', fighters_path %>
